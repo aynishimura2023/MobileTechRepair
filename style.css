@@ -1,0 +1,166 @@
+/* Adjust the background color with a linear gradient */
+body {
+    background-image: linear-gradient(to bottom, darksalmon, lightsteelblue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 55.75em;
+}
+
+/* modify the container div with a static width of 1024px and center it*/
+.container {
+    width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* --------------------------------- */
+/* CSS for the Header, Logo, and NAV */
+/* --------------------------------- */
+
+/* The header box will need to display the content side by side using flexbox and justify content ... Hint: flex, center the items, 
+    and add some space from the outside edges */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #B8336A;
+}
+
+/* adjust the size of the logo image (150 - 225 px) */
+.logoIcon img {
+    width: 150px;
+}
+
+/* Style the look of the buttons (color, border, padding etc.), display, and their position  */
+.navButton {
+    border: 2px solid white;
+    padding: 12px 25px;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    position: relative;
+}
+
+/* Remove the hypertext look from the anchor element, change the font, and font color */
+.navButton a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+/* Style (position, border, shadow) and hide the drop down box */
+.dropDown {
+    display: none;
+    position: absolute;
+    margin-left: -27px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px black;
+    background-color: white;
+    color: #B8336A;
+    z-index: 1;
+}
+
+/* This will override the previous class selector during hover to display the dropdown. */
+.navButton:hover .dropDown {
+    display: block;
+}
+
+/* Change the background color of the dropdown menu and possibly remove the border  */
+.dropDown .navButton {}
+
+/* style the color of the anchor elements inside the drop down*/
+.dropDown .navButton a {
+    color: #B8336A;
+}
+
+
+/* Bonus add a hover effect to the dropdown menu with a color change of the background */
+.dropDown .navButton:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+/* --------------------------------------- */
+/* CSS for the Main Section of the Website */
+/* ---------------------------------------- */
+
+/* Create a min-height of 300, add flex, and align everything to the center */
+main {
+    min-height: 300px;
+    display: flex;
+    align-content: center;
+    margin-top: 2rem;
+}
+
+/* Add a flex ratio of 2 and some padding */
+.heroBox1 {
+    flex-grow: 2;
+    padding: 1rem 2rem;
+}
+
+/* Add a flex ratio of 1  */
+.heroBox2 {
+    flex-grow: 1;
+}
+
+/* Stretch the image to 100% of the div and add a drop-shawdow filter */
+.heroBox2 img {
+    width: 100%;
+    box-shadow: 10px 5px 5px rgb(87, 87, 87);
+}
+
+/* Modify the font size, font family, padding and add a text shadow */
+h1 {
+    font-size: 36px;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px 40px;
+    text-shadow: 1px 1px black;
+}
+
+/* Modify the font size, font family, top margin */
+h2 {
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* modify the line-height and padding on the bottom */
+p {
+    line-height: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+/* ---------------------------------------- */
+/* CSS for the Cards Section of the Website */
+/* ---------------------------------------- */
+/* Set the cards section to flex, justify the content, and align to center */
+.cards {}
+
+/* Add a background image from the images folder with citation comment, set the background size to cover the space, adjust the background position (bottom), set a min height of 250px, set a width of 30%, set a border radius, and add a box-shadow */
+.card1 {}
+
+/* Add a background image from the images folder with citation commment, set the background size to cover the space, ajust the background position (bottom), set a min height of 250px, set a width of 30%, set a border radius, and add a box-shadow */
+.card2 {}
+
+/* Add a background image from the images folder with citation comment, set the background size to cover the space, adjust the background position (bottom), set a min height of 250px, set a width of 30%, set a border radius, and add a box-shadow */
+.card3 {}
+
+/* Change the font size using rem, change the line height, adjust the margin, and change the font family */
+.cards p {}
+
+/* Add padding to the top of the icon (0.75 rem), adjust the font size to 100px (or equivalent rem), change the color to something light (ex. rgb(236, 216, 207) )  */
+.cards i {}
+
+/* remove the underline from the hyperlink, change the color to something light or even just white, add text shadow */
+.cards a {}
+
+
+
+/* ----------------------------------------------- */
+/* CSS for the Testimonials Section of the Website */
+/* ----------------------------------------------- */
+
+
+
+/* ----------------------------------------- */
+/* CSS for the Footer Section of the Website */
+/* ----------------------------------------- */
