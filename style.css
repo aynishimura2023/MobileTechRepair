@@ -1,9 +1,10 @@
 /* Adjust the background color with a linear gradient */
 body {
-    background-image: linear-gradient(to bottom, darksalmon, lightsteelblue);
+    background-image: linear-gradient(to bottom, darksalmon, rgb(154, 181, 215));
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 55.75em;
+    width: auto;
 }
 
 /* modify the container div with a static width of 1024px and center it*/
@@ -66,7 +67,9 @@ header {
 }
 
 /* Change the background color of the dropdown menu and possibly remove the border  */
-.dropDown .navButton {}
+.dropDown .navButton {
+    background-color: white;
+}
 
 /* style the color of the anchor elements inside the drop down*/
 .dropDown .navButton a {
@@ -91,10 +94,18 @@ main {
     margin-top: 2rem;
 }
 
+main.bookOnline {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+
 /* Add a flex ratio of 2 and some padding */
 .heroBox1 {
     flex-grow: 2;
-    padding: 1rem 2rem;
+    padding: 1rem
 }
 
 /* Add a flex ratio of 1  */
@@ -105,7 +116,8 @@ main {
 /* Stretch the image to 100% of the div and add a drop-shawdow filter */
 .heroBox2 img {
     width: 100%;
-    box-shadow: 10px 5px 5px rgb(87, 87, 87);
+    filter: drop-shadow(10px 5px 5px rgb(50, 50, 50));
+    /* <!-- "wocintech (microsoft) 62" by wocintechchat.com is licensed under CC BY-SA 2.0--> */
 }
 
 /* Modify the font size, font family, padding and add a text shadow */
@@ -117,50 +129,185 @@ h1 {
     text-shadow: 1px 1px black;
 }
 
+
+
 /* Modify the font size, font family, top margin */
 h2 {
     font-size: 24px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0.75rem
 }
 
+
+
+
+
 /* modify the line-height and padding on the bottom */
-p {
+main p {
     line-height: 1.5rem;
     padding-bottom: 2rem;
+    text-shadow: 1px 1px 1px #c0558281;
+    /*(194,166,169)*/
+    color: rgb(45, 45, 45);
+}
+
+.myButton {
+    text-decoration: none;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1.5px solid black;
+    border-radius: 14px;
+    padding: .5rem .75rem;
+}
+
+.myButton:hover {
+    background-color: rgba(172, 172, 172, 0.75);
 }
 
 /* ---------------------------------------- */
 /* CSS for the Cards Section of the Website */
 /* ---------------------------------------- */
 /* Set the cards section to flex, justify the content, and align to center */
-.cards {}
+.cards {
+
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 2rem;
+}
 
 /* Add a background image from the images folder with citation comment, set the background size to cover the space, adjust the background position (bottom), set a min height of 250px, set a width of 30%, set a border radius, and add a box-shadow */
-.card1 {}
+.card1 {
+    background-image: url(images/800px-Books-business-computer-connection-459654.jpg);
+    /* "Business-computer-connection" Officialaliandassociates, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0> via Wikimedia Commons */
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+    border-radius: 16px;
+    box-shadow: 5px 5px 10px black;
+}
 
 /* Add a background image from the images folder with citation commment, set the background size to cover the space, ajust the background position (bottom), set a min height of 250px, set a width of 30%, set a border radius, and add a box-shadow */
-.card2 {}
+.card2 {
+    background-image: url(images/motherboard.jpeg);
+    /* "Motherboard" by xxjcaxx is licesnsed under CC BY-NC-SA 2.0 */
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+    border-radius: 16px;
+    box-shadow: 5px 5px 10px black;
+}
 
 /* Add a background image from the images folder with citation comment, set the background size to cover the space, adjust the background position (bottom), set a min height of 250px, set a width of 30%, set a border radius, and add a box-shadow */
-.card3 {}
+.card3 {
+    background-image: url(images/iphone.jpeg);
+    /* "iPhone 8 Plus Bokeh" by Photos By Dlee is licensed under CC BY-NC-ND 2.0 */
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;
+    border-radius: 16px;
+    box-shadow: 5px 5px 10px black;
+}
 
 /* Change the font size using rem, change the line height, adjust the margin, and change the font family */
-.cards p {}
+.cards p {
+    color: rgb(225, 225, 225);
+    text-shadow: grey;
+    font-size: 1rem;
+    line-height: 1rem;
+    margin: 1rem 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 /* Add padding to the top of the icon (0.75 rem), adjust the font size to 100px (or equivalent rem), change the color to something light (ex. rgb(236, 216, 207) )  */
-.cards i {}
+.cards i {
+    padding-top: 0.75rem;
+    font-size: 100px;
+    color: lightgray;
+}
 
 /* remove the underline from the hyperlink, change the color to something light or even just white, add text shadow */
-.cards a {}
+.cards a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
 
 
 
 /* ----------------------------------------------- */
 /* CSS for the Testimonials Section of the Website */
 /* ----------------------------------------------- */
+/* For the testimonials / review section, add flex to the display, dustify the content so it is spaced out, use flex-wrap and set it to "wrap", add some margin to the top and bottom */
+.testimonials {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    margin-bottom: 2.25rem;
+}
 
-
+/* For each individual box, add a light-colored boarder, include some padding, make each one the width of 40% to 45%, add a margin to the bottom of each box to create spacing between the rows  */
+.tBox {
+    border: 2px solid white;
+    width: 40%;
+    margin-bottom: 1.5rem;
+    color: white;
+    padding: 1rem 1rem;
+    background-color: rgba(92, 92, 92, 0.05);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.397);
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25));
+}
 
 /* ----------------------------------------- */
 /* CSS for the Footer Section of the Website */
 /* ----------------------------------------- */
+/* For the footer, add a background color that is transparent, change the color of the font to something light, add a max width that matches the container's width, add margin to the right and left to center the content... consider also adding some margin to the top. */
+footer {
+    background-color: rgba(78, 78, 78, 0.3);
+    color: white;
+    max-width: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    margin-bottom: .5rem;
+}
+
+
+.addressinput {
+    text-align: justify;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 2rem;
+}
+
+p.ad {
+    text-shadow: none;
+    max-width: 65ch;
+}
+
+h3 {
+    font-size: 30px;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px 7%;
+    text-shadow: 1px 1px black;
+}
+
+
+p.bo {
+    text-shadow: none;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.onlineService {}
+
+.partsDelivery {}
+
+.requestServices {}
